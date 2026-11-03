@@ -1,0 +1,907 @@
+﻿===FILE: Materi P2.pdf===
+Pages: 12
+---Page 1---
+MINGGU 2
+Problem 
+Formulation
+& Security Dataset
+Mata Kuliah: Kecerdasan Buatan untuk 
+Keamanan
+Metode: Project-Based Learning
+AI-Assisted Security Analytics Prototype
+Fokus: memilih masalah keamanan, 
+mendefinisikan target model, dan menilai 
+kelayakan dataset.
+KSI251525 | Kecerdasan Buatan untuk Keamanan 1
+Zuliar Efendi, M.Kom
+---Page 2---
+AI for Security | Minggu 2
+Posisi Minggu 2 dalam PjBL
+M1
+Masalah
+M2
+Dataset
+M3
+EDA
+M4
+Preprocess
+M5
+Model
+M6
+Evaluasi
+Minggu 2 menjadi titik keputusan: proyek tidak 
+dimulai dari algoritma, tetapi dari masalah 
+keamanan dan data yang valid.
+ò Masalah harus jelas dan dapat diuji dengan data.
+ò Dataset harus punya fitur, label, dan konteks keamanan.
+ò Target model harus selaras dengan keputusan analis 
+keamanan.
+KSI251525 | Kecerdasan Buatan untuk Keamanan 2
+---Page 3---
+AI for Security | Minggu 2
+Capaian Pembelajaran Minggu 2
+1. Merumuskan masalah
+Mahasiswa mampu mendefinisikan masalah 
+keamanan menjadi pertanyaan analitik yang dapat 
+diuji.
+2. Memilih dataset
+Mahasiswa mampu menentukan sumber data, 
+fitur, label, kelas, dan batasan dataset keamanan.
+3. Menyusun brief
+Mahasiswa mampu membuat Project Brief awal 
+sebagai dasar proyek semester.
+Output akhir pertemuan: Project + Dataset + repository awal.
+KSI251525 | Kecerdasan Buatan untuk Keamanan 3
+---Page 4---
+ERROR: 'charmap' codec can't encode character '\u2713' in position 560: character maps to <undefined>
+
+===FILE: Materi Minggu 3 Exploratory Data Analysis.pdf===
+Pages: 16
+---Page 1---
+MINGGU 3 | PROJECT-BASED LEARNING
+Exploratory Data Analysis
+pada Data Keamanan
+Kecerdasan Buatan untuk Keamanan
+Dosen: Zuliar Efendi, M.Kom.
+Fokus: memahami data sebelum membuat 
+model deteksi, klasifikasi, atau analisis 
+keamanan.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 01
+---Page 2---
+Target Pembelajaran Minggu 3
+Capaian Praktikum
+ò Menjelaskan tujuan EDA dalam proyek AI for Security.
+ò Membaca struktur dataset keamanan dan data 
+dictionary.
+ò Mengecek kualitas data: missing value, duplikasi, 
+outlier, dan distribusi label.
+ò Menyusun temuan awal sebagai dasar preprocessing 
+dan modeling.
+Output utama: Notebook EDA dan Data Profiling 
+Report untuk dataset proyek kelompok.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 02
+---Page 3---
+ERROR: 'charmap' codec can't encode character '\u2192' in position 79: character maps to <undefined>
+
+===FILE: Materi Minggu ke 5.pdf===
+Pages: 15
+---Page 1---
+Minggu 5
+Memilih 1 Algoritma ML
+dan membaca confusion matrix
+Fokus pertemuan: setiap kelompok memilih satu 
+algoritma yang masuk akal untuk data proyek, lalu 
+menjelaskan hasil model menggunakan confusion matrix 
+yang umum.
+Dosen: Zuliar Efendi, M.Kom.
+Output: alasan algoritma + confusion matrix + kesimpulan
+1
+1
+---Page 2---
+Tujuan pertemuan
+Bahasa sederhana, langsung diarahkan ke proyek kelompok.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Menentukan satu algoritma yang sesuai dengan data 
+proyek.
+Menulis alasan pemilihan algoritma secara jelas.
+Melatih model dan menguji hasilnya dengan data test.
+Membaca confusion matrix tanpa tergantung judul 
+proyek.
+Menyimpulkan apakah model sudah cukup baik atau 
+perlu diperbaiki.
+2
+---Page 3---
+Alur kerja kelompok
+Ikuti langkah ini agar pengerjaan proyek rapi.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+1
+Cek masalah
+Apa yang ingin 
+diprediksi?
+2
+Pilih algoritma
+Satu algoritma saja.
+3
+Latih model
+Gunakan data train.
+4
+Uji model
+Gunakan data test.
+5
+Analisis hasil
+Baca confusion 
+matrix.
+Catatan: minggu ini bukan lomba mencoba banyak algoritma. Fokusnya adalah membuat pilihan yang 
+dapat dijelaskan dan diuji.
+3
+---Page 4---
+Sebelum memilih algoritma
+Jawab empat pertanyaan ini berdasarkan proyek masing-masing.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Masalah
+Apa yang ingin model bantu deteksi atau 
+klasifikasi?
+Target
+Kolom label apa yang akan diprediksi?
+Fitur
+Kolom apa saja yang dipakai sebagai input model?
+Risiko
+Kesalahan mana yang paling perlu dihindari?
+Algoritma yang baik bukan yang terlihat paling rumit. Algoritma yang baik adalah yang cocok dengan data, 
+tujuan, dan risiko proyek.
+4
+---Page 5---
+Panduan memilih 1 algoritma
+Pilih satu, lalu jelaskan alasan memilihnya.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Algoritma Alasan mudah dipahami Cocok saat...
+Decision Tree Mudah dibaca seperti aturan keputusan Dosen/kelompok ingin penjelasan sederhana
+Random Forest Lebih stabil dari satu pohon keputusan Data tabular dan fitur cukup banyak
+Logistic Regression Cepat, sederhana, kuat untuk awal Hubungan fitur dan target cukup sederhana
+KNN Melihat kemiripan antar data Data kecil dan fitur sudah discaling
+SVM Mencari batas pemisah antar kelas Data tidak terlalu besar dan kelas cukup jelas
+5
+---Page 6---
+Contoh alasan memilih algoritma
+Gunakan pola ini pada laporan kelompok.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Template alasan
+Kelompok memilih [nama algoritma] karena data 
+proyek berbentuk [jenis data], target yang 
+diprediksi adalah [label], dan model perlu 
+[mudah dijelaskan / stabil / cepat / cocok untuk 
+data kecil].
+Contoh
+Kelompok memilih Random Forest karena 
+dataset berbentuk tabel, memiliki beberapa 
+fitur numerik dan kategorikal, serta 
+membutuhkan model baseline yang stabil. 
+Hasil model akan dinilai dengan confusion 
+matrix.
+Jangan menulis: ôkarena algoritma ini bagusö . Jelaskan hubungan antara algoritma, data, dan tujuan proyek.
+6
+---Page 7---
+Praktik eksperimen yang benar
+Pisahkan data train dan test sebelum melatih model.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Data train dipakai untuk melatih model.
+Data test dipakai untuk menguji model.
+Jangan melatih model memakai data test.
+Preprocessing harus mengikuti alur yang sama 
+untuk train dan test.
+Prediksi data test menjadi dasar confusion matrix.
+Tujuannya sederhana: kita ingin tahu apakah model 
+dapat bekerja pada data baru, bukan hanya 
+menghafal data latihan.
+7
+---Page 8---
+Confusion matrix yang umum
+Bisa dipakai untuk semua judul proyek.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Kelas positif
+Kelas yang ingin ditemukan model. Contoh: phishing, 
+serangan, malware, spam, anomali, atau kelas utama proyek.
+Kelas negatif
+Kelas selain positif. Contoh: normal, aman, legitimate, 
+benign, atau aktivitas biasa.
+Aturan membaca
+Baris = data asli. Kolom = hasil prediksi model. Lihat mana 
+yang benar dan mana yang salah.
+Prediksi Positif Prediksi Negatif
+Asli Positif
+Asli Negatif
+TP
+Positif benar terdeteksi
+FN
+Positif tidak terdeteksi
+FP
+Negatif salah dianggap 
+positif
+TN
+Negatif benar dikenali
+8
+---Page 9---
+Makna TP , TN, FP , FN
+Ganti ôpositifö sesuai kelas utama proyek kelompok.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+TP
+Data yang memang positif dan diprediksi positif. Model 
+berhasil menemukan kasus penting.
+TN
+Data yang memang negatif dan diprediksi negatif. 
+Model mengenali kondisi biasa dengan benar.
+FP
+Data negatif, tetapi diprediksi positif. Ini menghasilkan 
+alarm palsu.
+FN
+Data positif, tetapi diprediksi negatif. Kasus penting 
+lolos dari deteksi.
+Contoh kelas positif: ôphishingö , ôattackö , ômalwareö , ôspamö , ôanomaliö , ôfraudö , atau kelas lain sesuai judul proyek.
+9
+---Page 10---
+Contoh confusion matrix umum
+Contoh angka, bukan data wajib untuk semua kelompok.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Prediksi Positif Prediksi Negatif
+Asli Positif TP = 42 FN = 8
+Asli Negatif FP = 15 TN = 135
+Apa artinya?
+42 kasus positif berhasil ditemukan, tetapi 8 kasus 
+positif masih lolos.
+Apa risikonya?
+15 data negatif menjadi alarm palsu. Ini bisa 
+menambah pekerjaan pengecekan.
+Apa kesimpulan awal?
+Model belum cukup dinilai dari angka benar saja. 
+Lihat FP dan FN sesuai risiko proyek.
+10
+---Page 11---
+Metrik dari confusion matrix
+Pakai metrik untuk mendukung penjelasan, bukan menggantikan analisis.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Metrik Pertanyaan sederhana Kapan penting?
+Accuracy Berapa banyak prediksi yang benar? Gambaran umum, tetapi hati-hati jika data tidak seimbang
+Precision Dari prediksi positif, berapa yang benar? Saat alarm palsu perlu ditekan
+Recall Dari data positif asli, berapa yang tertangkap? Saat kasus positif tidak boleh banyak lolos
+F1-score Seimbang antara precision dan recall Saat keduanya sama-sama penting
+Gunakan metrik sesuai tujuan proyek. Jangan hanya memilih nilai yang paling tinggi tanpa membaca dampaknya.
+11
+---Page 12---
+Jika proyek punya lebih dari dua kelas
+Confusion matrix tetap bisa dipakai. Cara membacanya sedikit berbeda.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Binary classification
+Hanya dua kelas. Contoh: positif dan negatif.
+Multiclass classification
+Lebih dari dua kelas. Contoh: normal, phishing, 
+malware, spam.
+Cara membaca multiclass
+Baris tetap data asli. Kolom tetap prediksi. Angka 
+diagonal berarti benar. Angka di luar diagonal 
+berarti salah kelas. Pilih satu kelas penting untuk 
+dianalisis lebih dalam.
+Untuk tugas minggu ini, kelompok cukup menjelaskan kelas utama yang paling relevan dengan judul proyek.
+12
+---Page 13---
+Praktik Python singkat
+Struktur kode dapat dipakai untuk algoritma apa pun.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix, classification_report
+X_train, X_test, y_train, y_test = train_test_split(
+X, y, test_size=0.2, random_state=42, stratify=y
+)
+# ganti dengan algoritma pilihan kelompok
+model = ALGORITMA_PILIHAN
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+cm = confusion_matrix(y_test, y_pred)
+print(cm)
+print(classification_report(y_test, y_pred))
+Yang diganti
+ALGORITMA_PILIHAN sesuai keputusan 
+kelompok.
+Yang dianalisis
+Nilai confusion matrix dan classification 
+report.
+Yang dijelaskan
+Makna FP dan FN sesuai konteks proyek.
+13
+---Page 14---
+Format laporan kelompok
+Tulis pendek, jelas, dan berdasarkan hasil eksperimen.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Judul proyek dan kelas positif yang dianalisis.
+Satu algoritma yang dipilih.
+Minimal tiga alasan memilih algoritma tersebut.
+Confusion matrix dari data test.
+Penjelasan TP , TN, FP , dan FN secara umum.
+Kesimpulan: model sudah cukup baik atau perlu 
+diperbaiki.
+Kalimat bantu kesimpulan
+ôModel cukup baik pada bagian ..., 
+tetapi masih memiliki masalah pada 
+.... Perbaikan berikutnya adalah .... ö
+Hindari kesimpulan: ômodel bagus karena accuracy tinggiö tanpa membahas FP dan FN.
+14
+---Page 15---
+Tugas minggu 5
+Langsung dikerjakan menggunakan data proyek masing-masing kelompok.
+Kecerdasan Buatan untuk Keamanan Dosen: Zuliar Efendi, M.Kom.
+Pilih satu algoritma machine learning.
+Tulis alasan pemilihan algoritma.
+Latih model pada data train.
+Uji model pada data test.
+Tampilkan confusion matrix.
+Jelaskan FP dan FN sesuai konteks proyek.
+Tulis kesimpulan dan rencana perbaikan.
+15
+
+===FILE: Materi P4 Data Preprocessing.pdf===
+Pages: 13
+---Page 1---
+Pertemuan 4
+Data Preprocessing
+untuk AI Security
+Mempersiapkan data keamanan agar layak untuk pemodelan 
+machine learning.
+Project-Based Learning Praktik Python
+Dosen: Zuliar Efendi, M.Kom.
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 01
+---Page 2---
+Koneksi dengan Pertemuan Sebelumnya
+Minggu 3 sudah mengenalkan EDA dan pemahaman dataset keamanan.
+Minggu 2
+Problem formulation, pemilihan kasus keamanan, 
+target model, dan sumber dataset.
+Minggu 3
+Exploratory Data Analysis: struktur data, distribusi 
+label, missing values, outlier, dan pola awal.
+Minggu 4
+Data preprocessing: membersihkan, mengubah, 
+membagi, dan menyiapkan data untuk training 
+model.
+Pertanyaan
+ôJika dataset masih kotor, tidak seimbang, dan bocor antara trainingûtesting, apakah 
+model dengan akurasi tinggi dapat dipercaya?ö
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 02
+---Page 3---
+Capaian Pertemuan 4
+Mahasiswa menghubungkan kualitas data dengan validitas model keamanan.
+1
+Menjelaskan tujuan preprocessing pada dataset 
+keamanan.
+2
+Membersihkan missing value, duplikasi, dan data 
+tidak konsisten.
+3
+Melakukan encoding, scaling, dan feature 
+selection dasar.
+4
+Membagi data menjadi train-test tanpa data 
+leakage.
+5
+Menyusun preprocessing pipeline awal untuk 
+proyek kelompok.
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 03
+---Page 4---
+Masalah Umum pada Dataset Keamanan
+Preprocessing dimulai dari memahami risiko kualitas data.
+Missing value
+Log tidak lengkap, field kosong, capture gagal.
+Duplikasi
+Event sama tercatat berulang atau flow ganda.
+Format tidak konsisten
+Timestamp, IP, port, label, dan kategori tidak 
+seragam.
+Outlier
+Nilai ekstrem dapat berarti serangan atau 
+kesalahan data.
+Class imbalance
+Data normal jauh lebih banyak dari data serangan.
+Data leakage
+Informasi testing tidak sengaja masuk ke training.
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 04
+---Page 5---
+Alur Preprocessing untuk AI Security
+Ubah data mentah menjadi tabel fitur yang siap digunakan model.
+1 Data mentah 2 Cleaning 3 Encoding 4 Scaling 5 Split 6 Dataset siap model
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 05
+---Page 6---
+Langkah 1: Cleaning Data
+Tujuan: mengurangi noise tanpa menghapus sinyal serangan yang penting.
+Missing value
+Cek kolom kosong. Isi dengan nilai logis, median, 
+modus, atau tandai sebagai kategori unknown.
+Duplikasi
+Hapus baris duplikat jika event benar-benar sama. 
+Jangan hapus event serangan berulang yang valid.
+Inconsistent format
+Samakan tipe data: waktu, IP, port, protocol, label, dan 
+angka numerik.
+# contoh awal
+df.info()
+df.isna().sum()
+df.duplicated().sum()
+# hapus duplikasi tepat
+df = df.drop_duplicates()
+Prinsip untuk data keamanan
+Jangan menghapus outlier sebelum memahami 
+konteksnya.
+Serangan sering muncul sebagai pola langka.
+Catat keputusan cleaning di experiment log.
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 06
+---Page 7---
+Missing Value: Pilih Strategi dengan Alasan
+Tidak semua kolom kosong harus diperlakukan sama.
+Kolom numerik
+Median sering lebih aman saat distribusi miring.
+Kolom kategori
+Gunakan modus atau nilai ôunknownö.
+Kolom label
+Jangan menebak label serangan. Hapus atau validasi manual.
+Kolom kritis
+Jika terlalu banyak kosong, pertimbangkan drop column.
+num_cols = ['duration','bytes','
+ packets'
+ ]
+cat_cols = ['protocol','service']
+from sklearn.impute import SimpleImputer
+num_imputer = SimpleImputer(strategy='median')
+cat_imputer = SimpleImputer(strategy='most_frequent')
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 07
+---Page 8---
+Langkah 2: Encoding dan Scaling
+Model ML membutuhkan angka. Data kategori perlu diubah dengan hati-hati.
+Encoding
+One-Hot Encoding untuk protocol, service, flag, atau kategori 
+nominal.
+Label Encoding hanya aman jika urutan kategorinya bermakna.
+Scaling
+StandardScaler untuk model yang sensitif terhadap skala.
+MinMaxScaler berguna untuk rentang 0û1.
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.compose import ColumnTransformer
+preprocess = ColumnTransformer([
+('num', StandardScaler(), num_cols),
+('cat', OneHotEncoder(handle_unknown='ignore'), cat_cols)
+])
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 08
+---Page 9---
+Langkah 3: Feature Selection
+Tujuan: memilih fitur yang relevan, stabil, dan dapat dijelaskan.
+Hapus fitur tidak informatif
+Kolom ID, timestamp mentah, atau kolom konstan 
+sering tidak membantu model.
+Cek korelasi ekstrem
+Fitur yang terlalu mirip dapat memperberat model 
+dan mengaburkan interpretasi.
+Waspadai leakage feature
+Contoh: kolom ôattack_categoryö dipakai untuk 
+memprediksi ôis_attackö.
+Pertanyaan analitis
+Apakah fitur tersedia saat model berjalan di dunia nyata?
+Apakah fitur tersebut hasil keputusan manusia setelah kejadian?
+Apakah fitur membuat model ôterlalu mudahö karena membawa jawaban?
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 09
+---Page 10---
+TrainûTest Split dan Data Leakage
+Evaluasi model hanya sah jika data testing benar-benar belum pernah dilihat model.
+Aturan utama
+Lakukan split sebelum fit scaler, imputer, encoder, atau feature selector. Semua 
+transformasi harus belajar dari training set.
+Gunakan stratify
+Untuk classification, stratify membantu menjaga proporsi normal dan attack pada train 
+dan test.
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(
+X, y, test_size=0.2, random_state=42, stratify=y
+)
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 10
+---Page 11---
+Bangun Pipeline agar Reproducible
+Pipeline mencegah langkah preprocessing dilakukan manual dan tidak konsisten.
+from sklearn.pipeline import Pipeline
+from sklearn.ensemble import RandomForestClassifier
+model = Pipeline([
+('preprocess', preprocess),
+('clf', RandomForestClassifier(random_state=42))
+])
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+Manfaat pipeline
+Urutan kerja lebih jelas.
+Eksperimen mudah diulang.
+Risiko data leakage turun.
+Tim lebih mudah kolaborasi di proyek.
+Cocok untuk baseline modeling minggu berikutnya.
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 11
+---Page 12---
+Praktik Python: Notebook Minggu 4
+Mahasiswa menyiapkan dataset proyek kelompok.
+Struktur notebook
+Import library dan dataset
+Cek struktur, label, missing value
+Pisahkan fitur dan target
+Train-test split
+Buat preprocessing pipeline
+Simpan data siap olah
+Output praktik
+Notebook .ipynb, preprocessing summary, dan catatan keputusan data cleaning.
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 12
+---Page 13---
+Ringkasan
+Preprocessing menentukan kualitas evaluasi model.
+Cleaning harus punya alasan dan catatan.
+Encoding dan scaling harus masuk pipeline.
+Train-test split wajib mencegah leakage.
+Minggu 5 masuk ke baseline modeling.
+Tugas: kumpulkan notebook preprocessing dan preprocessing 
+summary.
+Kecerdasan Buatan untuk Keamanan | Zuliar Efendi, M.Kom. 16
+
+===FILE: Pemilihan Algoritma.pdf===
+Pages: 6
+---Page 1---
+PEMILIHAN ALGORITMA 
+KECERDASAN BUATAN UNTUK KEAMANAN 
+Deteksi Intrusi Jaringan Berbasis Machine Learning 
+menggunakan Dataset NSL-KDD 
+ 
+ 
+Dosen Pengampu: 
+ZULIAR EFENDI, M.Kom 
+ 
+Disusun Oleh: 
+HANDAL KARIS ARBI (NIM. 6404240007) 
+MARKUS EDISON SILALAHI (NIM. 6404240005) 
+ 
+JURUSAN TEKNIK INFORMATIKA 
+PROGRAM STUDI KEAMANAN SISTEM INFORMASI 
+POLITEKNIK NEGERI BENGKALIS 
+2026 
+
+---Page 2---
+1. Algoritma yang dipilih dan Alasan 
+Algoritma yang dipilh adalah Random Forest, karena data proyek berbentuk tabel 
+dengan campuran fitur numerik dan kategorikal, target yang diprediksi adalah label 
+biner normal atau attack, dan model perlu stabil serta mampu menangkap pola trafik 
+jaringan yang tidak linear. 
+Alasan lainnya: 
+1. Cocok untuk data tabular dengan banyak fitur 
+Dataset berbentuk tabel dengan 41 fitur campuran numerik dan 
+kategorikal, dan beberapa penelitian pada NSL-KDD menempatkan 
+Random Forest di antara algoritma dengan performa terbaik (Abrar dkk., 
+2020; Cholakoska dkk., 2021). 
+2. Stabil terhadap fitur yang miring dan outlier 
+Hasil EDA menunjukkan fitur duration, src_bytes, dan dst_bytes 
+sangat miring dengan outlier ekstrem.Model berbasis pohon relatif tahan 
+terhadap kondisi ini, dan gabungan banyak pohon lebih stabil daripada satu 
+DecisionTree. Breiman (2001) juga menunjukkan bahwa Random Forest 
+lebih tahan terhadap noise dibandingkan Adaboost. 
+3. Sesuai dengan ukuran data 
+Dengan 125.973 baris data latih, random forest berjalan mudah 
+(model selesai dilatih dalam 16.1 detik di Google Colab), sedangkan KNN 
+dan SVM berat pada data sebesar ini dan logistic regression kemungkinan 
+terlalu sederhana untuk pola serangan yang beragam. 
+4. Hasilnya dapat dijelaskan 
+Random forest menyediakan feature importance (Breiman, 2001), 
+sehingga analisis SOC dapat melihat fitur mana yang paling menentukan 
+keputusan model (Bagian 4). 
+ 
+---Page 3---
+ERROR: 'charmap' codec can't encode character '\u019f' in position 1362: character maps to <undefined>
+
+===FILE: Perbandingan Algoritma Lain.pdf===
+Pages: 8
+---Page 1---
+PERBANDINGAN ALGORITMA LAIN 
+KECERDASAN BUATAN UNTUK KEAMANAN 
+Deteksi Intrusi Jaringan Berbasis Machine Learning menggunakan 
+Dataset NSL-KDD 
+ 
+ 
+Dosen Pengampu: 
+ZULIAR EFENDI, M.Kom 
+ 
+Disusun Oleh: 
+HANDAL KARIS ARBI (NIM. 6404240007) 
+MARKUS EDISON SILALAHI (NIM. 6404240005) 
+ 
+JURUSAN TEKNIK INFORMATIKA 
+PROGRAM STUDI KEAMANAN SISTEM INFORMASI 
+POLITEKNIK NEGERI BENGKALIS 
+2026 
+ 
+
+---Page 2---
+Algoritma yang dibandingkan dan Alasan 
+Dua algoritma yang dibandingkan adalah Gradient Boosting (GB) dan Logistic 
+Regression (LR). GB adalah model berbasis pohon keputusan yang trainning secara berurutan, 
+dan setiap pohon baru memperbaiki kesalahan pohon sebelumnya. Model ini dapat menangkap 
+pola non linear dan interaksi antar fitur. LR adalah model linear yang menghitung pola non 
+linear dan interaksi antar fitur. LR adalah model linear yang menghitung peluang sebuah 
+koneksi adalah serangan dari kombinasi linear fitur. Model ini sederhana, cepat dilatih, dan 
+koefisiennya mudah dibaca. 
+Alasan memabndingkan keduanya: 
+1. Mewakili dua pendekatan berbeda.  
+LR menjadi baseline linear dan GB menjadi model non linear, sehingga terlihat apakah 
+pola serangan NSL-KDD cukup dipisahkan secara linear. 
+2. Ada dugaan yang diuji. 
+ Data trafik memuat fitur yang sangat miring (duration, src_bytes, dst_bytes), fitur 
+kategorikal dengan banyak nilai (service), dan perilaku serangan yang beragam, sehingga 
+model non linear diduga lebih sesuai. GB juga memberi akurasi biner terbaik pada KDDTest+ 
+pada penelitian lain (Pardeshi & Patil, 2024). 
+3. Data dan preprocessing sama.  
+Kedua model memakai 125 fitur hasil tahap M4, sehingga perbedaan hasil berasal dari 
+algoritma, bukan dari data. 
+2. Skenario Uji dan Tolak Ukur 
+ò Data latih KDDTrain+ (125.973 baris) dan data uji KDDTest+ (22.544 baris, 12.833 
+attack dan 9.711 normal), kelas positif: attack. 
+ò Preprocessing sama dengan tahap M4: OneHotEncoder, StandardScaler, dan tiga 
+fitur log1p, menghasilkan 125 fitur. 
+ò Gradient Boosting: n_estimators 100, learning_rate 0,1, max_depth 3 (nilai 
+bawaan), random_state 42. 
+ò Logistic Regression: max_iter 1000, random_state 42, regularisasi L2 dengan C 1,0 
+(nilai bawaan). 
+ò Tolak ukur utama: Recall dan F1-Score. Loss dihitung sebagai jumlah kesalahan 
+prediksi (FN + FP). Loss yang tinggi, terutama FN, berarti ada celah keamanan 
+karena serangan lolos tanpa alert. 
+ò Hasil utama memakai ambang keputusan standar 0,5. Pengaruh ambang lain 
+dibahas pada Bagian 4.5. 
+ 
+---Page 3---
+3. Hasil Perbandingan pada KDDTest+ 
+Tabel 1. Perbandingan metrik Gradient Boosting dan Logistic Regression 
+Metrik Gradient Boosting Logistic Regression Selisih GB 
+Accuracy 80,66% 73,61% +7,05 poin 
+Precision (attack) 97,17% 91,08% +6,09 poin 
+Recall (utama) 68,00% 59,46% +8,54 poin 
+F1-Score (utama) 80,01% 71,95% +8,06 poin 
+FN (serangan lolos) 4.107 5.203 1.096 lebih sedikit 
+FP (alarm palsu) 254 747 493 lebih sedikit 
+Loss (FN + FP) 4.361 5.950 1.589 lebih sedikit 
+Waktu latih 42,6 detik 2,5 detik LR lebih cepat 
+ 
+Accuracy GB 80,66% dan LR 73,61%. Accuracy menyembunyikan besarnya FN, sehingga 
+bukan tolak ukur utama. 
+Precision GB 97,17% dan LR 91,08%. Dari setiap 100 alert, sekitar 3 salah pada GB dan sekitar 
+9 salah pada LR, sehingga beban analis SOC lebih besar pada LR. 
+Recall GB 68,00% dan LR 59,46%. Serangan yang lolos 32,00% pada GB dan 40,54% pada 
+LR, selisih 1.096 serangan. 
+F1-Score GB 80,01% dan LR 71,95%, selisih 8,06 poin. 
+Loss LR 5.950 dan GB 4.361. Selisih 1.589 terdiri atas 1.096 FN dan 493 FP, jadi LR lebih 
+buruk di kedua sisi, dan sisi FN adalah celah keamanan yang lebih besar. 
+Waktu latih LR jauh lebih cepat karena hanya menghitung satu set koefisien, sedangkan GB 
+melatih 100 pohon secara berurutan. Nilai waktu bergantung pada mesin yang dipakai. 
+---Page 4---
+ERROR: 'charmap' codec can't encode character '\u019f' in position 42: character maps to <undefined>
+
+===FILE: TUGAS DATASET KEAMANAN P2 Kelompok.pdf===
+Pages: 4
+---Page 1---
+TUGAS DATASET KEAMANAN 
+KECERDASAN BUATAN UNTUK KEAMANAN 
+ 
+ 
+Dosen Pengampu: 
+ZULIAR EFENDI, M.Kom 
+Disusun Oleh: 
+HANDAL KARIS ARBI (NIM. 6404240007) 
+MARKUS EDISON SILALAHI (NIM. 6404240005) 
+ 
+ 
+JURUSAN TEKNIK INFORMATIKA 
+PROGRAM STUDI KEAMANAN SISTEM INFORMASI 
+POLITEKNIK NEGERI BENGKALIS 
+2026 
+  
+
+---Page 2---
+JUDUL PROJEK 
+ôDeteksi Intrusi Jaringan Berbasis Machine Learning menggunakan Dataset NSL-KDDö 
+ 
+Masalah Keamanan 
+V olume trafik jaringan yang besar membuat analisis manual untuk mendeteksi serangan menjadi 
+lambat. Pertanyaan yang ingin ditemukan jawabanya apakah model dapat membedakan antara 
+trafik jaringan normal dari trafik bentuk serangan melalu fitur-fitur koneksinya 
+Target Pengguna 
+Analisis keamanan jaringan (SOC) 
+Target Model 
+Model akan mengklasifikasikan tiap koneksi jadi normal atau attack (baseline). Kalau wakru 
+memeungkinakan, dikembangkan jadi multiclass: DDos, Probe, R2L, U2R. Kalau prediksinya 
+attack, sistem akan memberi peringatan atau alert ke analisis untuk di cek lebih lanjut.  
+ 
+  
+---Page 3---
+Konsep 
+ 
+ 
+Dataset dan Sumber: 
+NSL-KDD, dataset publik dari University of New Brunswick (perbaikan dari KDD Cup 99). 
+Terdiri dari data training (▒126 ribu baris) dan testing (▒22 ribu baris), sudah dibersihkan dari 
+duplikasi. Link: https://www.kaggle.com/datasets/hassan06/nslkdd 
+ 
+Fitur Utama 
+41 fitur, contohnya: duration, protocol_type, service, flag, src_bytes, dst_bytes, count, 
+serror_rate, dst_host_count. Menggambarkan durasi koneksi, jenis protokol, jumlah byte 
+terkirim, dan pola trafik. 
+Label / Target 
+
+---Page 4---
+ERROR: 'charmap' codec can't encode character '\uf0b7' in position 282: character maps to <undefined>
+
+===FILE: TUGAS Preprocessing P4 Kelompok.pdf===
+Pages: 3
+---Page 1---
+DATA PREPROCESSING 
+KECERDASAN BUATAN UNTUK KEAMANAN 
+ 
+ 
+Dosen Pengampu: 
+ZULIAR EFENDI, M.Kom 
+ 
+Disusun Oleh: 
+HANDAL KARIS ARBI (NIM. 6404240007) 
+MARKUS EDISON SILALAHI (NIM. 6404240005) 
+ 
+ 
+JURUSAN TEKNIK INFORMATIKA 
+PROGRAM STUDI KEAMANAN SISTEM INFORMASI 
+POLITEKNIK NEGERI BENGKALIS 
+2026 
+
+---Page 2---
+A. Latar Belakang & Problem Statement 
+Tahap ini melanjutkan hasil Exploratory Data Analysis (EDA) pada Minggu 3, 
+yang menemukan bahwa dataset NSL-KDD sudah bersih dari missing value dan 
+duplikasi, namun memiliki outlier ekstrem pada fitur volume traffic (duration, 
+src_bytes, dst_bytes), ketimpangan kelas yang parah pada kategori serangan minoritas 
+(R2L, U2R), serta kolom difficulty yang berisiko menyebabkan data leakage. Laporan 
+ini merangkum keputusan pembersihan, transformasi, dan penyiapan data (data 
+preprocessing) yang diambil berdasarkan temuan tersebut, sebelum data digunakan 
+untuk baseline modeling di Minggu 5. 
+ALUR PREPROCESSING YANG DITERAPKAN 
+ 
+Ringkasan Keputusan Preprocessing 
+Aspek Temuan / Alasan Tindakan 
+Missing value & duplikasi Dikonfirmasi ulang: 0 pada seluruh kolom Tidak ada tindakan 
+Kolom difficulty 
+Metadata skor kesulitan 
+dari pembuat dataset, 
+bukan fitur jaringan asli 
+Dibuang dari fitur (X); 
+tidak digunakan sama 
+sekali 
+Kolom attack_category 
+Turunan langsung dari 
+label class ù berisiko 
+data leakage jika jadi 
+fitur 
+Dibuang dari fitur (X); 
+dipakai sebagai target 
+multiclass terpisah 
+Outlier duration, src_bytes, 
+dst_bytes 
+Distribusi sangat right-
+skewed (temuan 
+Minggu 3) 
+Ditambahkan versi log1p 
+sebagai kolom baru; 
+kolom asli tetap 
+dipertahankan 
+Encoding kategorikal 
+protocol_type, service, 
+flag bertipe kategorikal 
+nominal 
+One-Hot Encoding lewat 
+ColumnTransformer 
+Scaling numerik Rentang nilai antar fitur numerik sangat berbeda StandardScaler pada 38 fitur numerik (memakai 
+
+---Page 3---
+versi log1p untuk 3 fitur 
+yang skewed) 
+Pembagian data Evaluasi harus bebas dari data leakage 
+Train-validation internal 
+(80/20, stratified) dari 
+KDDTrain+ saja; 
+KDDTest+ disimpan 
+utuh sebagai test set final 
+Pipeline Proses perlu konsisten & reproducible 
+Disatukan dalam sklearn 
+Pipeline (preprocess + 
+model); fit hanya pada 
+data training 
+ 
+C. Verifikasi Pipeline (Smoke Test) 
+Fitur Hasil 
+Ukuran data training (internal) 100.779 x 44 kolom 
+Ukuran data validasi internal 25.195 baris x 44 kolom 
+Proporsi kelas (train & val) Normal 53,5% / attack 46,5% - Identik, stratify 
+berhasil 
+Model smoke test RandomForestClassifier (default), sekedar 
+mengetes pipeline 
+Accuracy pada validation set  99,9% 
+Accuracy 99,9% ini adalah hasil smoke test pada validation set yang diambil 
+dari dalam KDDTrain+ sendiri, sehingga polanya masih sangat mirip dengan data 
+training. Angka ini bukan evaluasi performa final ù NSL-KDD secara sengaja 
+merancang KDDTest+ agar berisi beberapa jenis serangan yang tidak muncul di 
+KDDTrain+, untuk menguji apakah model benar-benar mempelajari pola serangan atau 
+hanya menghafal data latih. Evaluasi yang jujur baru dapat diklaim setelah pipeline 
+diuji pada KDDTest+ di Minggu 5, menggunakan metrik precision/recall/F1 per kelas 
+(bukan hanya accuracy) mengingat ketimpangan kelas pada R2L dan U2R. 
+D. Kesimpulan 
+Seluruh tahapan preprocessing wajib cleaning, penanganan outlier, encoding, 
+scaling, dan train-test split tanpa leakage telah diterapkan dan digabungkan dalam satu 
+pipeline yang reproducible (preprocessing_pipeline_kelompok2.pkl). Keputusan-
+keputusan pada laporan ini menjadi dasar bagi kelompok untuk masuk ke tahap 
+baseline modeling pada Minggu 5, dengan evaluasi akhir pada KDDTest+ 
+menggunakan metrik yang mempertimbangkan ketimpangan kelas 
+
+===FILE: Tugas P1 AI for Security.pdf===
+Pages: 2
+---Page 1---
+Nama: Handal Karis Arbi 
+Nim: 6404240007 
+Kelas: KSI 5A 
+Matakuliah: Kecerdasan Buatan untuk Keamanan 
+ 
+Perbedaan AI Biasa dengan AI for security 
+Dari kedua ai tersebut memiliki perbedaan dalam beberapa aspek dari focus utama AI biasa lebih 
+efisiensi, generate konten, dan kemudahan pengguna. Sedangkan ai untuk keamanan yaitu 
+melakukan deteksi anomali, menentukan mitigasi serangan, dan respons insiden otomatis.  
+Lalu dari segi karakteristik data, AI Biasa menghasilkan teks bahasa yang natural, gambar, video, 
+dan preferensi belanja. Sedangkan ai for security dari log server, packet capture, trafik jaringan, 
+dan malware.  
+Aspek toleransi kesalahan pada AI Biasa cukup fleksibel. Jika AI salah merekomendasikan lagu 
+dampaknya kecil sedangkan AI for security sangat kritis False positive (alarm palsu) membebani 
+tim IT, false negative mengakibatkan kebocoran data 
+Aspek sifat lingkungan AI Biasa cenderung statis atau berubah secara organik, sedangkan AI for 
+Security sifatnya Adverserial yang memungkinkan penyerang terus merancang taktik baru untuk 
+menembus logika AI) 
+ 
+Ide Projek  
+"Rancang Bangun Sistem Keamanan Smart Doorlock Berbasis Face Recognition dengan 
+Fitur Text-to-Speech untuk Identifikasi Pengunjungö 
+1. Riset & tentukan spesifikasiTentukan use case detail (berapa wajah yang perlu dikenali, jarak 
+ideal kamera ke wajah, skenario akses ditolak), pelajari literatur soal face recognition dan liveness 
+detection. 
+2. Siapkan komponen hardware 
+Untuk otak sistem AI, Raspberry Pi 4 (minimal 4GB RAM) paling praktis karena bisa langsung 
+menjalankan Python, OpenCV , dan model face recognition tanpa server tambahan. Arduino 
+Uno/Nano sendiri tidak punya cukup daya komputasi untuk AI ù perannya cuma sebagai 
+pengontrol aktuator (relay ke solenoid). Kombinasi umum: Raspberry Pi mengirim sinyal ke 
+Arduino Uno yang mengendalikan relay dan solenoid. Alternatif lain: ESP32-CAM (varian 
+Arduino dengan kamera + WiFi bawaan) mengambil gambar lalu kirim ke laptop untuk diproses. 
+---Page 2---
+Komponen lain: modul kamera, relay module, solenoid door lock 12V , adaptor power terpisah, 
+speaker/buzzer kecil untuk TTS, breadboard dan kabel jumper. 
+ 
+3. Setup environment AI 
+Install Python, OpenCV , face_recognition (atau dlib/FaceNet), MediaPipe untuk liveness, dan 
+pyttsx3/gTTS untuk text-to-speech. Pakai virtual environment supaya dependency rapi dan 
+gampang didokumentasikan di laporan. 
+4. Bangun modul face recognition 
+Bangun modul face recognition Kumpulkan dataset wajah (beberapa sudut perorang), ekstrak face 
+embedding, simpan ke database (file/pickle dulu untuk prototype, bisa dipindah ke database 
+Laravel kalau mau ada dashboard admin), lalu buat fungsi matching dengan threshold similarity. 
+5. Tambahkan liveness & TTS 
+Implementasikan pengecekan liveness sederhana (misal deteksi kedipan mata pakai eye aspect 
+ratio dari MediaPipe Face Mesh) supaya foto/video tidak bisa menipu sistem, lalu hubungkan hasil 
+pengenalan wajah ke fungsi TTS yang menyebut nama orangnya. 
+6. Rakit & wiring hardware 
+Sambungkan kamera ke board utama, relay ke pin GPIO (Raspberry Pi) atau pin digital (Arduino), 
+dan solenoid ke relay dengan power supply terpisah ù solenoid biasanya butuh 12V , jangan 
+disuplai langsung dari board. Pastikan ground antar komponen tersambung bersama (common 
+ground). 
+7. Integrasikan AI dengan aktuator 
+Kalau semua di satu board (Raspberry Pi), tinggal panggil library RPi.GPIO langsung dari script 
+Python untuk trigger relay saat wajah cocok. Kalau dipisah ke Arduino, gunakan komunikasi 
+serial: pyserial di Python mengirim sinyal sederhana (misal karakter '1') tiap kali wajah dikenali, 
+Arduino menerimanya lewat Serial.read() lalu mengaktifkan relay. 
+8. Uji, debug, dokumentasikan 
+Uji akurasi recognition di berbagai kondisi pencahayaan, uji anti-spoofing pakai foto/video, ukur 
+waktu respons dari deteksi sampai pintu terbuka, lalu susun seluruh proses ini jadi BAB 3 
+(metodologi) dan BAB 4 (implementasi & pengujian) di laporan. 
+ 
+

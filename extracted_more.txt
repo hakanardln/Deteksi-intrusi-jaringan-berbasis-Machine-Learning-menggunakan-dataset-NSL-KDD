@@ -1,0 +1,291 @@
+﻿---P2 Page 4---
+---P2 Page 5---
+AI for Security | Minggu 2
+Anatomi Dataset Keamanan
+Kolom Makna
+Fitur Variabel input, seperti durasi koneksi, protocol, bytes, request length
+Label Kelas target, seperti benign, attack, phishing, normal
+Record Unit observasi, seperti flow, log entry, URL, alert
+Metadata Waktu, sumber, skenario, alat, dan batasan data
+Syarat minimal dataset proyek
+ò Ada target analisis yang jelas.
+ò Jumlah data memadai untuk eksperimen sederhana.
+ò Tersedia informasi fitur dan label.
+ò Boleh digunakan untuk pendidikan dan riset.
+KSI251525 | Kecerdasan Buatan untuk Keamanan 5
+---P2 Page 6---
+AI for Security | Minggu 2
+Sumber Data untuk AI for Security
+Network flow
+IDS, trafik jaringan, flow features
+Use case: Intrusion detection
+Log sistem
+Login, akses, proses, event
+Use case: Anomaly detection
+URL/domain
+Pola URL, karakteristik domain
+Use case: Phishing detection
+Alert keamanan
+Severity, signature, event count
+Use case: Alert prioritization
+Aplikasi
+Request, error log, akses endpoint
+Use case: App security analytics
+Minggu 2, mahasiswa memilih satu jenis 
+data dan menjelaskan mengapa data itu 
+cocok untuk kasus keamanan yang dipilih.
+KSI251525 | Kecerdasan Buatan untuk Keamanan 6
+---P2 Page 7---
+---P2 Page 8---
+AI for Security | Minggu 2
+Checklist Kualitas Dataset
+Completeness
+Apakah banyak data kosong atau 
+tidak valid?
+Consistency
+Apakah format, satuan, dan label 
+konsisten?
+Balance
+Apakah kelas serangan terlalu 
+sedikit?
+Leakage
+Apakah ada fitur yang langsung 
+membocorkan label?
+Representativeness
+Apakah data relevan dengan 
+skenario keamanan proyek?
+Ethics & scope
+Apakah data aman dan boleh 
+digunakan untuk pembelajaran?
+Prinsip utama
+Sebelum membuat model, harus dibuktikan bahwa dataset layak 
+dipakai. Dataset yang tidak layak harus diganti, disederhanakan, 
+atau dibatasi ruang lingkupnya.
+KSI251525 | Kecerdasan Buatan untuk Keamanan 8
+---P2 Page 9---
+AI for Security | Minggu 2
+Template Project Brief
+Setiap kelompok mengisi ringkas tetapi spesifik.
+Judul proyek Masalah keamanan
+Target pengguna Dataset dan sumber
+Unit observasi Fitur utama
+Label / target Metrik evaluasi
+Risiko dan batasan Rencana eksperimen
+Standar minimal
+Project brief harus cukup jelas sehingga kelompok lain dapat 
+memahami masalah, data, target model, dan rencana eksperimennya 
+tanpa penjelasan lisan.
+KSI251525 | Kecerdasan Buatan untuk Keamanan 9
+---P2 Page 10---
+AI for Security | Minggu 2
+Aktivitas Praktikum Minggu 2
+1 Pilih topik keamanan 2 Cari atau pilih dataset 3 Definisikan target model
+4 Identifikasi fitur dan label 5 Cek kualitas dataset 6 Buat Project Brief v1
+KSI251525 | Kecerdasan Buatan untuk Keamanan 10
+---P2 Page 11---
+AI for Security | Minggu 2
+Rubrik Cepat untuk Brief dan Dataset
+Sangat baik
+Masalah spesifik, data relevan, label 
+jelas, risiko dijelaskan.
+Baik
+Masalah dan data cukup jelas, masih 
+ada detail teknis yang perlu 
+dipertegas.
+Cukup
+Topik masih umum, dataset belum 
+sepenuhnya selaras dengan target.
+Perlu revisi
+Masalah, target, dan data belum 
+dapat diuji sebagai proyek AI.
+Umpan balik dosen difokuskan pada tiga keputusan: lanjut, lanjut dengan revisi, atau ganti 
+dataset/topik.
+Lanjut Revisi ruang lingkup Ganti topik/dataset
+KSI251525 | Kecerdasan Buatan untuk Keamanan 11
+---P2 Page 12---
+---M3 Page 3---
+---M3 Page 4---
+Apa Itu Exploratory Data Analysis?
+Konsep Inti
+EDA adalah proses memahami bentuk, 
+kualitas, pola, dan anomali data 
+sebelum model machine learning 
+dibangun.
+ò Mengubah dataset mentah menjadi informasi yang 
+dapat dijelaskan.
+ò Membantu memilih fitur relevan untuk kasus keamanan.
+ò Mengurangi risiko data leakage, bias, dan salah 
+interpretasi.
+ò Menjadi dasar keputusan preprocessing dan evaluasi.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 04
+---M3 Page 5---
+Struktur Dataset Keamanan
+Security Data
+Sumber umum: log, network flow, URL, 
+alert IDS, endpoint event, dan application 
+log.
+ò Unit observasi: satu flow, satu URL, atau satu event.
+ò Fitur: duration, protocol, bytes, flags, request 
+pattern.
+ò Label: benign, attack, phishing, suspicious, atau 
+normal.
+ò Target: klasifikasi, deteksi anomali, atau prioritisasi 
+alert.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 05
+---M3 Page 6---
+Data Dictionary: Kamus Sebelum Analisis
+Praktik Wajib
+Kolom yang tidak dipahami akan menghasilkan model yang sulit dijelaskan. Data dictionary 
+membantu mahasiswa menghubungkan fitur dengan konteks keamanan.
+CONTOH ISI DATA DICTIONARY
+ò Nama fitur: duration
+ò Tipe data: numerik
+ò Makna: lama koneksi jaringan
+ò Status: dipakai sebagai fitur
+ò Catatan: perlu cek outlier
+TUGAS KELOMPOK
+ò Pilih minimal 5 fitur utama.
+ò Jelaskan makna keamanan setiap fitur.
+ò Tandai fitur yang menjadi label.
+ò Catat fitur yang berisiko data leakage.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 06
+---M3 Page 7---
+Cek Kualitas Data Keamanan
+Data Profiling
+ò Missing values: data kosong pada kolom penting.
+ò Duplikasi: baris berulang yang mengganggu evaluasi.
+ò Outlier ekstrem: nilai tidak wajar pada durasi, bytes, atau 
+packet count.
+ò Distribusi label: proporsi normal dan serangan.
+ò Tipe data salah: angka terbaca sebagai teks atau waktu 
+tidak terformat.
+ò Data leakage: fitur yang membocorkan label secara tidak 
+sah. Misal: password dan username
+Security data sering besar, tidak seimbang, 
+dan mengandung noise. Kualitas data 
+menentukan kualitas deteksi.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 07
+---M3 Page 8---
+Distribusi Label dan Class Imbalance
+Kelas Normal vs Serangan
+Pada kasus keamanan, data normal sering jauh lebih banyak daripada data serangan. 
+Accuracy saja dapat menyesatkan.
+Contoh distribusi label:
+Normal: 8.600
+DoS: 940
+Scan: 620
+Brute Force: 310
+Botnet: 120
+ò Periksa jumlah data tiap label.
+ò Catat kelas minoritas dan mayoritas.
+ò Hubungkan imbalance dengan false 
+negative.
+ò Rencanakan metrik selain accuracy.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 08
+---M3 Page 9---
+Missing Value, Duplikasi, dan Outlier
+Kualitas Data
+MISSING VALUE
+ò Dampak: model tidak stabil atau 
+gagal dilatih.
+ò Keputusan: drop, imputasi, atau 
+investigasi.
+DUPLIKASI
+ò Dampak: evaluasi tampak terlalu 
+baik.
+ò Keputusan: hapus data duplikat.
+OUTLIER
+ò Dampak: skala fitur dan batas 
+keputusan bergeser.
+ò Keputusan: analisis, transformasi, 
+atau clipping.
+Semua keputusan pembersihan data harus dicatat pada notebook agar eksperimen 
+dapat direplikasi.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 09
+---M3 Page 10---
+Visualisasi untuk Menemukan Pola Awal
+EDA Visual
+ò Histogram: melihat distribusi fitur numerik.
+ò Bar chart: melihat jumlah label atau kategori.
+ò Scatter plot: melihat pemisahan antar kelas.
+ò Correlation heatmap: melihat hubungan antar 
+fitur.
+ò Line chart: melihat pola waktu pada log.
+Setiap visual wajib diikuti interpretasi, 
+bukan hanya gambar.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 10
+---M3 Page 11---
+Contoh Kerangka Notebook EDA
+Praktikum Python
+import pandas as pd
+df = pd.read_csv("security_dataset.csv")
+print(df.shape)
+print(df.info())
+print(df.isna().sum())
+print(df.duplicated().sum())
+print(df["label"].value_counts())
+print(df.describe())
+ò Gunakan nama file dan kolom sesuai dataset 
+kelompok.
+ò Simpan output penting sebagai bukti analisis.
+ò Tambahkan komentar interpretatif pada setiap 
+blok kode.
+ò Pisahkan section EDA, preprocessing, dan 
+modeling.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 11
+---M3 Page 12---
+---M3 Page 13---
+Praktikum PjBL Minggu 3
+Aktivitas Kelompok
+1. Buka dataset proyek dan pahami struktur kolom.
+2. Buat data dictionary minimal 5 fitur.
+3. Lakukan profiling: shape, tipe data, missing, duplikasi, 
+statistik, label.
+4. Buat minimal 2 visualisasi yang relevan.
+5. Tuliskan 5 temuan EDA dan dampaknya pada 
+preprocessing.
+Diskusi kelas: setiap kelompok menyampaikan 
+satu temuan EDA yang paling berpengaruh 
+terhadap rencana model.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 13
+---M3 Page 14---
+Tugas Minggu 3
+Deliverable
+Project Milestone 2: Data Understanding dan EDA
+ò Notebook EDA berisi import data, data profiling, visualisasi, dan interpretasi.
+ò Data dictionary minimal 5 fitur utama.
+ò Minimal 2 temuan EDA dengan bukti grafik atau statistik.
+ò Rencana preprocessing awal untuk missing, outlier, encoding, dan scaling..
+Format: PDF singkat + notebook .ipynb atau link Google Colab
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 14
+---M3 Page 15---
+Rubrik Penilaian Minggu 3
+Milestone EDA
+Bobot penilaian:
+ò Kejelasan dataset dan problem security: 15%
+ò Data dictionary dan pemahaman fitur: 20%
+ò Kelengkapan data profiling: 20%
+ò Kualitas visualisasi dan interpretasi: 25%
+ò Rencana preprocessing dan repository: 20%
+Checklist sebelum dikumpulkan:
+ò Notebook dapat dijalankan ulang.
+ò Grafik punya interpretasi jelas.
+ò Keputusan preprocessing punya alasan.
+ò Dataset dan fitur mengikuti etika penggunaan 
+data.
+ò Kontribusi anggota terlihat di repository.
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 15
+---M3 Page 16---
+Keluaran Akhir Pertemuan 3
+Ringkasan
+ò Kelompok memahami dataset proyek secara 
+faktual.
+ò Kelompok memiliki data dictionary awal.
+ò Kelompok mengetahui masalah kualitas data.
+ò Kelompok memiliki visualisasi dan temuan EDA.
+ò Kelompok siap masuk ke preprocessing minggu 
+4.
+Refleksi: fitur mana yang paling relevan untuk 
+keputusan keamanan, dan fitur mana yang 
+berpotensi menyesatkan model?
+Kecerdasan Buatan untuk Keamanan | Pertemuan 3 | Dosen: Zuliar Efendi, M.Kom. 16

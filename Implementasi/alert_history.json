@@ -1,0 +1,103 @@
+[
+  {
+    "id": "ALT-20261027-161345",
+    "timestamp": "2026-10-27 16:13:45",
+    "protocol_type": "tcp",
+    "service": "http",
+    "flag": "S0",
+    "src_bytes": 0,
+    "dst_bytes": 0,
+    "count": 100,
+    "attack_prob": 0.94,
+    "category": "DoS (Denial of Service)",
+    "specific_type": "neptune / smurf / syn-flood",
+    "severity": "High",
+    "status": "New",
+    "analyst_notes": "Terdeteksi otomatis via Analisis Manual (Threshold: 0.5)",
+    "top_factors": [
+      "TCP Flag mencurigakan (S0)",
+      "Lonjakan koneksi count (100)"
+    ]
+  },
+  {
+    "id": "ALT-2026-1001",
+    "timestamp": "2026-10-27 15:24:03",
+    "protocol_type": "tcp",
+    "service": "private",
+    "flag": "S0",
+    "src_bytes": 0,
+    "dst_bytes": 0,
+    "count": 142,
+    "attack_prob": 0.965,
+    "category": "DoS (Denial of Service)",
+    "specific_type": "neptune / syn-flood",
+    "severity": "High",
+    "status": "Investigating",
+    "analyst_notes": "Trafik SYN Flood terdeteksi ke port private internal. Rule firewall sementara diaktifkan.",
+    "top_factors": [
+      "TCP Flag S0 (SYN tanpa ACK)",
+      "Lonjakan count=142 dalam 2s"
+    ]
+  },
+  {
+    "id": "ALT-2026-1002",
+    "timestamp": "2026-10-27 15:35:03",
+    "protocol_type": "tcp",
+    "service": "telnet",
+    "flag": "SF",
+    "src_bytes": 2568,
+    "dst_bytes": 8670,
+    "count": 1,
+    "attack_prob": 0.912,
+    "category": "U2R (User to Root)",
+    "specific_type": "buffer_overflow / rootkit",
+    "severity": "Critical",
+    "status": "New",
+    "analyst_notes": "Sinyal eskalasi root privilege melalui shell remote. Membutuhkan isolasi segera.",
+    "top_factors": [
+      "Aktivitas root_shell=1",
+      "num_compromised=2",
+      "dst_bytes tinggi"
+    ]
+  },
+  {
+    "id": "ALT-2026-1003",
+    "timestamp": "2026-10-27 15:48:03",
+    "protocol_type": "tcp",
+    "service": "telnet",
+    "flag": "SF",
+    "src_bytes": 126,
+    "dst_bytes": 179,
+    "count": 1,
+    "attack_prob": 0.814,
+    "category": "R2L (Remote to Local)",
+    "specific_type": "guess_passwd",
+    "severity": "High",
+    "status": "New",
+    "analyst_notes": "Brute force password login terdeteksi pada port telnet.",
+    "top_factors": [
+      "Percobaan login gagal (3x)",
+      "Koneksi interaktif singkat"
+    ]
+  },
+  {
+    "id": "ALT-2026-1004",
+    "timestamp": "2026-10-27 15:57:03",
+    "protocol_type": "tcp",
+    "service": "private",
+    "flag": "REJ",
+    "src_bytes": 0,
+    "dst_bytes": 0,
+    "count": 185,
+    "attack_prob": 0.872,
+    "category": "Probe (Surveillance)",
+    "specific_type": "satan / portscan",
+    "severity": "Medium",
+    "status": "Resolved",
+    "analyst_notes": "Pemindaian port horizontal dari IP subnet luar. Port otomatis di-reject.",
+    "top_factors": [
+      "TCP Flag REJ",
+      "Tingkat penolakan rerror_rate tinggi"
+    ]
+  }
+]
